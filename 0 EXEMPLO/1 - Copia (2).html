@@ -37,38 +37,86 @@ a:active {
 <!--------------------------------------------------------->
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1250px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 27px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #3ADF00;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 26px;
+  font-size: 38px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0101DF;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+}
+.openbtn:hover {
+  background-color:#3ADF00;
+}
+</style>
+</head>
 <body>
-<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-<div class="w3-container w3-theme-d2">
-  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">FECHE X</span>
-  <br>
-  <div class="w3-padding w3-center">
-    <img class="w3-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR75q3p_hY7irm88SRMFE-EkjWGFZDUZgjlA&usqp=CAU" alt="avatar" style="width:75%">
-  </div>
-</div>
-<a class="w3-bar-item w3-button" href="../FILMES/1 - Copia.html">FILMES</a>
-<a class="w3-bar-item w3-button" href="../VIDEOS/1 - Copia.html">VIDEOS</a>
-<a class="w3-bar-item w3-button" href="../PORNO/1 - Copia.html">PORNO</a>
-<a class="w3-bar-item w3-button" href="../DOWNLOAD/1 - Copia.html">DOWNLOAD</a>
-<a class="w3-bar-item w3-button" href="../TV/1 - Copia.html">TV</a>
-<a class="w3-bar-item w3-button" href="../HTML/1 - Copia.html">HTML</a>
-<a class="w3-bar-item w3-button" href="../AUDIO/1 - Copia.html">AUDIO</a>
-<a class="w3-bar-item w3-button" href="../FOTOS/1 - Copia.html">FOTOS</a>
-<a class="w3-bar-item w3-button" href="../E-BOOK/1 - Copia.html">E-BOOK</a>
-<a class="w3-bar-item w3-button" href="../YOUTUBE/1 - Copia.html">YOUTUBE</a>
-
-
-
-
-</nav>
-<header class="w3-top w3-bar w3-theme">
-  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 <!--------------------------------------------------------->
-<h6 class="w3-bar-item">
-😇😈FILMESSANTOS😈😇<BR/><html>
+<!--------------------------------------------------------->
+  <a href="../FILMES/1 - Copia.html"><font color="red"><u><b>FILMES</b></u></font></a>
+<!--------------------------------------------------------->
+  <a href="../VIDEOS/1 - Copia.html">VIDEOS</a>
+<!--------------------------------------------------------->
+  <a href="../PORNO/1 - Copia.html">PORNO🔞</a>
+ <!--------------------------------------------------------->
+ <a href="../DOYOUTUBE/1 - Copia.html">DOYOUTUBE</a>
+<!--------------------------------------------------------->
+  <a href="../TV/1 - Copia.html">TV</a>
+<!--------------------------------------------------------->
+  <a href="../HTML/1 - Copia.html">HTML</a>
+<!--------------------------------------------------------->
+  <a href="../FOTOS/1 - Copia.html">FOTOS</a>
+<!--------------------------------------------------------->
+  <a href="../AUDIO/1 - Copia.html">AUDIO</a>
+<!--------------------------------------------------------->
+  <a href="../OUTROS/1 - Copia.html">OUTROS</a>
+<!--------------------------------------------------------->
+  <a href="../#/1 - Copia.html">🔐</a>
+
+
+
+</div>
+
+<button class="openbtn" onclick="openNav()"><FONT SIZE=+5>☰ </FONT>
+<!--------------------------------------------------------->
+<h3>😇😈FILMESSANTOS😈😇</h3><h6><BR/><html>
 <head>
 <title></title>
 </head>
@@ -130,37 +178,22 @@ document.write('  '+todaysDate);
 </SCRIPT>
 </body>
 </html></h6>
+<!---------------------------------------------------------></button>  
+<p>BEM VINDO!</p>
+<HR WIDTH="80%">
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+   </body>
+</html> 
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-</header>
-<!--------------------------------------------------------->
-<div class="w3-container" style="margin-top:90px">
-<hr>
-<!-------------------------------
-<div class="w3-cell-row"><div class="w3-cell" style="width:30%"><a href="
-LINK
-" target="_blank"><h2><img class="w3-circle" src="
-IMAGEM
-" style="width:100%"></h2></div><div class="w3-cell w3-container"><h3>
-NOME
-</h3></a><p>
-SOBRE
-</p></div></div>  <hr>
----------------------------->
-<!---------------------------------------------------------------------->
-<body class="bg-light">
-  <div class="container pt-4">
-    <div class="row">
-      <div class="col-sm-7 text-center mx-auto">
-        <h1 class="text-uppercase">INÍCIO<hr/></h1>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
@@ -168,231 +201,302 @@ SOBRE
 <!--------------------------------------------------------->
 <!------------------------🔴--🔴------------------------->
 <!--------------------------------------------------------------------------------------------
-
+<video width="470" height="255" poster="
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF"><h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME01<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME02<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
- <div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME03<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME04<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME05<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME06<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME08<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3> </div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME09<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME10<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
- <div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME11<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3 class="text-right">NOME12<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 <!--------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
+<h3>
+NOME
+</h3><video width="85%" poster="
+IMAGEM
+" controls><source src="
 LINK
-" type="video/mp4"></video><h3>NOME13<br/><textarea rows="3" cols="25" maxlength="1160">
+" type="video/mp4"><source src="
+LINK
+" type="video/ogg"><source src="
+LINK
+" type="video/webm"><object data="
+LINK
+" width="470" height="255"><embed src="
+LINK
+" width="470" height="255"></object></video><br/><textarea rows="7" cols="40" maxlength="1160">
 SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
+</textarea><BR/><a href="
+LINKDOWNLOAD 
+" download="teste_visualdicas"><img src="http://3.bp.blogspot.com/-A0EeAZfD0YU/VL-aFRZMEjI/AAAAAAAASpc/qyv26oRenXM/s1600/MBTAnimateddownloadbutton%5B5%5D.gif" width="320"></a><HR NOSHADE SIZE="12" color="RED"><HR NOSHADE SIZE="12" color="#0101DF">
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME14<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3>NOME15<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME16<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3> </div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3>NOME17<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME18<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
- <div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3>NOME19<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME20<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3>NOME21<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME22<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6 pt-3"><video controls class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3>NOME23<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3></div>
-<!--------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------->
-<div class="col-sm-6  pt-3"><video controls="" class="w-100 meus_videos parado"><source src="
-LINK
-" type="video/mp4"></video><h3 class="text-right">NOME24<br/><textarea rows="3" cols="25" maxlength="1160">
-SOBRE
-</textarea><BR/></h3> </div>
-<!-------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------------->
-</div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>  
-        $( document ).ready(function($) {
-            $('.parado').on('play', function() {
-                $(".rodando").each(function(){
-                        $(this).removeClass('rodando').addClass('parado');
-                        $(this).get(0).pause();
-                });
-                $(this).removeClass('parado').addClass('rodando');
-                $(this).get(0).play();
-            });
-        });
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-h6 {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-</style>
-</head>
-<body>
-</body>
-</html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
 <!DOCTYPE html>
 <html>
 <head>
@@ -406,11 +510,70 @@ h1 {
 <body>
 </body>
 </html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
 <!DOCTYPE html>
 <html>
 <head>
 <style>
 h2 {
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h6 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h4 {
+  text-shadow: 0 0 3px #FF0000;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h5 {
+  text-shadow: 2px 2px 5px red;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -420,46 +583,40 @@ h2 {
 </body>
 </html>
 <!--------------------------------------------------------->
+<!--------------------------------------------------------->
 
-
-
-
-
-</div>
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
-<footer class="w3-container w3-bottom w3-theme w3-margin-top">
-  <h6><a class="w3-bar-item w3-button" href="../PARTICULAR.html" target="_blank">🔐PARTICULAR🔐</a></h6>
-</footer>
-<!--------------------------------------------------------->
-<script>
-closeSidebar();
-function openSidebar() {
-  document.getElementById("mySidebar").style.display = "block";
+
+<html>
+<head>
+<style>
+body {
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
 }
-function closeSidebar() {
-  document.getElementById("mySidebar").style.display = "none";
+@-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #22DDD2;}
 }
-</script>
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #22DDD2;}
+}   
+</style>
+</head>
+<body>
 </body>
+</html>
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
-
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
-
+<HR NOSHADE SIZE="8" color="RED">
 <!--------------------------------------------------------->
 <!-----------------------------PAGINAÇÃO---------------------------->
 <!DOCTYPE html>
@@ -508,7 +665,9 @@ function closeSidebar() {
 <HR SIZE="7">
 <HR WIDTH="80%">
 <HR NOSHADE SIZE="8" color="#00ccff">
-<HR NOSHADE SIZE="8">
+<HR NOSHADE SIZE="8"><html>
+<a href="#top"><H3>VOLTAR AO TOPO</H3></a>
+</html><HR WIDTH="80%">
 <!-----------------------------WHATZAPP AUTOMATICO--------->
 
 <!DOCTYPE html>
